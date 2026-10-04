@@ -7,13 +7,7 @@ useSeoMeta({
 
 <template>
   <main class="construction">
-    <img
-      src="/images/DIFFRNT-BNW.png"
-      alt="DIFFRNT"
-      width="3000"
-      height="1000"
-      class="construction__logo"
-    >
+    <img src="/images/DIFFRNT-BNW.png" alt="DIFFRNT" width="3000" height="1000" class="construction__logo">
     <p class="construction__text">Under construction, see you soon</p>
   </main>
 </template>
@@ -37,6 +31,7 @@ useSeoMeta({
   width: min(560px, 90vw);
   aspect-ratio: 3 / 1;
   object-fit: cover;
+  animation: fade-in 1.2s ease-out both;
 }
 
 .construction__text {
@@ -46,5 +41,13 @@ useSeoMeta({
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text-muted);
+  animation: fade-in 1.2s ease-out 0.6s both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
 }
 </style>
