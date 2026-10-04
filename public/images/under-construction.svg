@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+  <defs>
+    <radialGradient id="sheen" cx="35%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#3a3a44"/>
+      <stop offset="0.6" stop-color="#16161b"/>
+      <stop offset="1" stop-color="#0d0d10"/>
+    </radialGradient>
+  </defs>
+  <circle cx="240" cy="240" r="236" fill="url(#sheen)" stroke="#2a2a33" stroke-width="2"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1.5">
+    <circle cx="240" cy="240" r="215"/>
+    <circle cx="240" cy="240" r="200"/>
+    <circle cx="240" cy="240" r="185"/>
+    <circle cx="240" cy="240" r="170"/>
+    <circle cx="240" cy="240" r="155"/>
+    <circle cx="240" cy="240" r="140"/>
+    <circle cx="240" cy="240" r="125"/>
+    <circle cx="240" cy="240" r="110"/>
+  </g>
+  <path d="M240 30 A210 210 0 0 1 420 130" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="240" cy="240" r="88" fill="#c8ff2e"/>
+  <text x="240" y="236" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700" fill="#0a0a0c" letter-spacing="1">DIFFRNT</text>
+  <text x="240" y="264" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" fill="#0a0a0c" letter-spacing="3">COMING SOON</text>
+  <circle cx="240" cy="240" r="8" fill="#0a0a0c"/>
+</svg>
