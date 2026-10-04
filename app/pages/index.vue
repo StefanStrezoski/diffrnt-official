@@ -12,13 +12,22 @@ const year = new Date().getFullYear()
     <span class="construction__logo">DIFFRNT<span class="construction__dot">.</span></span>
 
     <div class="construction__content">
-      <img
-        src="/images/under-construction.svg"
-        alt="A spinning vinyl record"
-        width="480"
-        height="480"
-        class="construction__image"
-      >
+      <div class="construction__record">
+        <img
+          src="/images/under-construction.svg"
+          alt="A spinning vinyl record with the DIFFRNT logo on its label"
+          width="480"
+          height="480"
+          class="construction__image"
+        >
+        <img
+          src="/images/DIFFRNT-BNW.png"
+          alt=""
+          width="164"
+          height="164"
+          class="construction__label"
+        >
+      </div>
 
       <div class="construction__text">
         <span class="construction__eyebrow">Under construction</span>
@@ -72,11 +81,26 @@ const year = new Date().getFullYear()
   padding-block: clamp(32px, 6vw, 64px);
 }
 
-.construction__image {
+.construction__record {
+  position: relative;
   width: 100%;
   max-width: 480px;
   margin-inline: auto;
   animation: spin 12s linear infinite;
+}
+
+.construction__image {
+  width: 100%;
+}
+
+/* Sits inside the lime label ring (r=88 of 480), leaving a thin accent edge */
+.construction__label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 34%;
+  translate: -50% -50%;
+  border-radius: 50%;
 }
 
 .construction__eyebrow {
@@ -124,7 +148,7 @@ const year = new Date().getFullYear()
     text-align: center;
   }
 
-  .construction__image {
+  .construction__record {
     max-width: min(320px, 75vw);
   }
 
